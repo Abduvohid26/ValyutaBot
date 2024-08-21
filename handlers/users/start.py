@@ -8,7 +8,11 @@ import requests
 
 
 url = 'https://nbu.uz/uz/exchange-rates/json/'
-response = requests.get(url=url)
+proxies = {
+    'http': None,
+    'https': None,
+}
+response = requests.get(url=url, proxies=proxies)
 datas = response.json()
 
 
