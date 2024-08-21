@@ -7,7 +7,7 @@ from keyboards.default.buttons import type_buttons
 import requests
 
 
-url = 'https://nbu.uz/uz/exchange-rates/json/'
+url = 'http://nbu.uz/uz/exchange-rates/json/'
 proxies = {
     'http': None,
     'https': None,
